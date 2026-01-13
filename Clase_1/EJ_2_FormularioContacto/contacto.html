@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de contacto</title>
+    </head>
+    <body>
+        <form action="contacto.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+    
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br>
+    
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono"><br>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto">
+                    <option value="">Selecciona un asunto</option>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Reclamo">Reclamo</option>
+                </select><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea><br>
+                
+                <input type="hidden" name="token" value="ABCDEfgh1234ijk56789"><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+        </form>
+    </body>
+</html>

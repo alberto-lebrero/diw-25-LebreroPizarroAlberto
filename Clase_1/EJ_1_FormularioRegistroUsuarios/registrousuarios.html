@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario registro usuarios</title>
+    </head>
+    <body>
+        <form action="registro.php" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+    
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br>
+    
+                <label for="contrasenna">Contraseña</label>
+                <input type="password" id="contrasenna" name="contrasenna"><br>
+    
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha"><br>
+
+                <fieldset>
+                    <legend>Género:</legend>
+
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="Masculino">
+                    
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="femenino" name="genero" value="Femenino">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Intereses:</legend>
+                    <label for="deportes">Deportes</label>
+                    <input type="checkbox" id="deportes" name="intereses[]" value="Deportes">
+
+                    <label for="musica">Música</label>
+                    <input type="checkbox" id="musica" name="intereses[]" value="Música">
+
+                    <label for="tecnologia">Tecnología</label>
+                    <input type="checkbox" id="tecnologia" name="intereses[]" value="Tecnología">
+                </fieldset><br>
+                
+                <label for="pais">País:</label><br>
+                <select id="pais" name="pais">
+                    <option value="">Selecciona un país</option>
+                    <option value="España">España</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Alemania">Alemania</option>
+                </select><br>
+    
+                <label for="foto">Foto de perfil</label>
+                <input type="file" id="foto" name="foto"><br>
+    
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+        </form>
+    </body>
+</html>
