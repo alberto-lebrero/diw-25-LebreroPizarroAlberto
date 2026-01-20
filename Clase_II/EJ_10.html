@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 10: </title>
+        
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <section>
+                <form id="form-contacto" action="enviar.php" method="post" class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" 
+                           title="Introduce tu nombre completo"
+                           placeholder="Introduce tu nombre completo" 
+                           required><br>
+
+                    <label for="email">Correo electrónico</label>
+                    <input id="email" type="email" name="correo"
+                           title="Introduce tu correo electrónico"
+                           placeholder="Introduce tu correo electrónico" 
+                           required><br>
+
+                    <label for="textarea">Mensaje</label>
+                    <textarea id="textarea" name="textarea" cols="25" rows="15"
+                              title="Introduce un mensaje" 
+                              placeholder="Introduce un mensaje" 
+                              required></textarea><br>
+
+                    <button id="enviar" type="submit" class="boton-enviar">Enviar</button>
+                </form>
+                <p id="mensaje-exito" hidden>!Tu mensaje ha sido enviado con éxito¡</p>
+            </section>
+        </main>
+
+        <footer>
+            &copy;<span id="anno"></span>
+        </footer>
+        <script>
+            const formulario = document.getElementById(form-contacto);
+            const 
+
+
+            const annoActual = new Date().getFullYear;
+            const date = document.getElementById(anno).setAttribute(anno, annoActual);
+
+        </script>
+    </body>
+</html>
