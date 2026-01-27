@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 30</title>
+
+        <style>
+            .button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+                color: white;
+                border-radius: 30px;
+            }
+
+             .button::after {
+                content: '4';
+                background-color: red;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 2px 6px;
+                border-radius: 50%;
+                position: absolute;
+                top: -5px;
+                right: -10px;
+            }
+
+            .button--primary {
+                background-color: rgb(0, 110, 255);
+            }
+
+            .button--secundary {
+                background-color: darkgrey;
+            }
+
+            .button--success {
+                background-color: green;
+            }
+
+            .button--danger {
+                background-color: red;
+
+            }
+
+            .button--warning {
+                background-color: yellow;
+                color: black;
+            }
+
+            .button--info {
+                background-color: rgb(15, 229, 183);
+            }
+
+            .button--light {
+                background-color: lightgray;
+                color: black;
+            }
+
+            .button--dark {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="button button--primary">Primary</button>
+        <button class="button button--secundary">Secondary</button>
+        <button class="button button--success">Success</button>
+        <button class="button button--danger">Danger</button>
+
+        <button class="button button--warning">Warning</button>
+        <button class="button button--info">Info</button>
+        <button class="button button--light">Light</button>
+        <button class="button button--dark">Dark</button>
+    </body>
+</html>

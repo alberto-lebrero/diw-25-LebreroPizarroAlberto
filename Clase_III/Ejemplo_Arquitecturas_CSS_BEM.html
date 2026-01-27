@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio </title>
+
+        <style>
+            .menu__list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .menu__item {
+                margin-right: 20px;
+            }
+
+            .menu__link {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .menu__item--active .menu__link {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="manu__item menu__item--active">
+                    <a href="#" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Servicios</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

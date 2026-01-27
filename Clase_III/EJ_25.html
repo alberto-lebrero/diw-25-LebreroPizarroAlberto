@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 25: Lista Productos</title>
+
+        <style>
+            :root {
+                --color-primario: rgb(33, 213, 219);
+                --color-secundario: rgb(158, 224, 241);
+                --color-fondo: grey;
+                --color-texto: rgb(188, 104, 236);
+                --espacio-base: 1.2rem;
+            }
+
+            .productos li:nth-child(even) {
+                background-color: #fff;
+            }
+
+            .productos li:nth-child(odd) {
+                background-color: #f0f0f0;
+            }
+
+            .productos li:not(.agotado) {
+                cursor: pointer;
+            }
+
+            .disponible {
+
+            }
+
+            .agotado {
+
+            }
+
+            .nuevo {
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="disponible">
+                <div>Producto 1</div>
+                <div>Este es el primer producto disponible en nuestra tienda.</div>
+                <div>$19.99</div>
+            </li>
+            <li class="disponible">
+                <div>Producto 2</div>
+                <div>Actualmente este producto está agotado.</div>
+                <div>$29.99</div>
+            </li>
+            <li class="disponible">
+                <div>Producto 3</div>
+                <div></div>
+                <div>$</div>
+            </li>
+            <li class="disponible">
+                <div>Producto 4</div>
+                <div></div>
+                <div>$</div>
+            </li>
+        </ul>
+    </body>
+</html>
