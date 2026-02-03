@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 35</title>
+
+        <style>
+            .menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;             
+                background-color: darkslategray;
+                color: white;
+                padding: 10px 20px;
+                z-index: 10;
+            }
+
+            .menu ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                gap: 20px;
+            }
+
+            .menu li {
+                cursor: pointer;
+            }
+            
+            .banner {
+                position: sticky;
+                top: 50px;
+                background-color: lightblue;
+                color: darkblue;
+                padding: 20px;
+                text-align: center;
+                z-index: 5;
+                border-bottom: 2px solid darkblue;
+            }
+
+            .card-container {
+                margin: 100px auto 0;
+                padding: 20px;
+                width: 90%;
+                overflow: hidden;
+            }
+
+            .card {
+                float: left;
+                width: 30%;
+                margin: 1.5%;
+                padding: 20px;
+                background-color: lightgray;
+                border-radius: 10px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .card:hover {
+                background-color: darkblue;
+                color: white;
+                z-index: 5;
+            }
+
+            .highlight-card {
+                position: absolute;
+                top: -20px;
+                left: 35%;
+                width: 40%;
+                z-index: 10;
+                background-color: darkred;
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .visible-content {
+                background-color: lightgreen;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .hidden-content {
+                visibility: hidden;
+                background-color: lightcoral;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <menu class="menu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Sección 1</li>
+                    <li>Sección 2</li>
+                    <li>Contacto</li>
+                </ul>
+            </menu>
+        </header>
+        <section class="banner">
+            <h2>Banner Sticky</h2>
+            <p>Este banner permanece visible al hacer scroll</p>
+        </section>
+
+        <section class="card-container">
+            <div class="highlight-card">Tarjeta destacada (z-index superior)</div>
+            <div class="card">Tarjeta 1</div>
+            <div class="card">Tarjeta 2</div>
+            <div class="card">Tarjeta 3</div>
+        </section>
+
+        <section class="scroll-container">
+            <div class="visible-content">
+                Contenido visible dentro del contenedor
+            </div>
+
+            <div class="hidden-content">
+                Contenido invisible (visibility: hidden)
+            </div>
+
+            <div class="visible-content">
+                Más contenido visible para provocar scroll
+            </div>
+
+            <div class="visible-content">
+                Otro bloque visible
+            </div>
+    </section>
+
+
+    <!-- Menú -->
+    <nav class="menu">
+        <ul>
+            <li>Inicio</li>
+            <li>Sección 1</li>
+            <li>Sección 2</li>
+            <li>Contacto</li>
+            <li style="background-color: darkred; padding: 5px 10px; border-radius: 5px;">
+                Tarjeta Destacada
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Bienvenido a la Página Compleja</h2>
+        <p>Este banner permanece visible mientras haces scroll</p>
+    </section>
+
+    <!-- Tarjetas -->
+    <section class="card-container">
+        <div class="highlight-card">Tarjeta Destacada</div>
+
+        <div class="card">Tarjeta 1</div>
+        <div class="card">Tarjeta 2</div>
+        <div class="card">Tarjeta 3</div>
+    </section>
+
+    <!-- Contenido desplazable -->
+    <section class="scroll-container">
+        <div class="visible-content">Este contenido es visible.</div>
+
+        <div class="hidden-content">
+            Este contenido es invisible pero ocupa espacio.
+        </div>
+
+        <p>
+            Contenido desplazable... Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus non arcu tincidunt, tincidunt est vel, pellentesque velit.
+            Nulla facilisi.
+        </p>
+
+        <p>
+            Contenido desplazable... Fusce auctor accumsan mauris, at varius augue malesuada non.
+            Etiam et dolor velit.
+        </p>
+    </section>
+
+    </body>
+</html>

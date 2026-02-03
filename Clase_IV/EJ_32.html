@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 32</title>
+
+        <style>
+            .gallery {
+                
+            }
+
+            .gallery-item {
+                float: left;
+                width: 30%;
+                margin: 1.5%;
+                background-color: lightblue;
+                text-align: center;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .clearfix::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <h1>Galería de imágenes con cajas flotantes</h1>
+        <div class="gallery clearfix">
+            <div class="gallery-item">Imagen 1</div>
+            <div class="gallery-item">Imagen 2</div>
+            <div class="gallery-item">Imagen 3</div>
+            <div class="gallery-item">Imagen 4</div>
+            <div class="gallery-item">Imagen 5</div>
+            <div class="gallery-item">Imagen 6</div>
+        </div>
+    </body>
+</html>

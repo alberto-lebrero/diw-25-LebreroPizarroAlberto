@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 40</title>
+
+        <style>
+            body {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+            }
+            .left {
+                background-color: green;
+                color: white;
+                flex-grow: 2;
+                padding: 20px;
+            }
+
+            .right {
+                background-color: white;
+                flex-grow: 1;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .row {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="left">Columna izquierda</div>
+        <div class="right">
+            <div class="row">Derecha parte alta</div>
+            <div class="row">Derecha parte abajo</div>
+        </div>
+    </body>
+</html>

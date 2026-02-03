@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 33</title>
+
+        <style>
+            #cajas {
+                position: relative;
+                height: 200px;
+            }
+
+            #caja-1, #caja-2, #caja-3 {
+                position: absolute;
+                width: 150px;
+                height: 100px;
+                border-radius: 5px;
+                padding: 0px 20px 20px 0px;
+            }
+
+            #caja-1 {
+                background-color: lightblue;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+
+            #caja-2 {
+                background-color: lightgreen;
+                z-index: 2;
+                top: 30px;
+                left: 30px;
+            }
+
+            #caja-3 {
+                background-color: lightcoral;
+                z-index: 3;
+                top: 60px;
+                left: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cajas Apiladas con z-index</h1>
+        <div class="cajas">
+            <div id="caja-1">Caja 1</div>
+            <div id="caja-2">Caja 2</div>
+            <div id="caja-3">Caja 3</div>
+        </div>
+    </body>
+</html>

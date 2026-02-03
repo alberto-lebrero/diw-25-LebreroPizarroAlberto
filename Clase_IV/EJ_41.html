@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 40</title>
+
+        <style>
+            body {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .up {
+                width: 100vw;
+                height: 24px;
+                text-decoration: solid;
+                margin: 0px;
+                padding: 20px;
+                text-align: center;
+                background-color: orange;
+            }
+
+            .left {
+                height: 100vh;
+                flex-grow: 1;
+                background-color: grey;
+                color: white;
+                text-align: center;
+            }
+
+            .center {
+                height: 100vh;
+                flex-grow: 2;
+                background-color: white;
+                text-align: center;
+            }
+
+            .right {
+                height: 100vh;
+                flex-grow: 1;
+                background-color: grey;
+                color: white;
+                text-align: center;
+            }
+
+            .col1 .box { background-color: #f99; }
+
+            .col2 .box { background-color: #9f9; }
+
+            .col3 .box { background-color: #99f;}
+
+            .box {
+                padding: 20px;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="up">Título de la página</header>
+        <p class="left">Lateral izquierdo</p>
+        <p class="center">Zona central</p>
+        <p class="right">Lateral derecho</p>
+        <div class="col1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="col2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="col3">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
