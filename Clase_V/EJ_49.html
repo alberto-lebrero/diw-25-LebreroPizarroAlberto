@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 49</title>
+
+        <style>
+            .container {
+                display: grid;
+                grid-gap: 1px;
+                grid-template-columns: repeat(4, 150px);
+                grid-template-areas: 
+                    "cell0 cell1 cell1"
+                    "cell2 cell3 cell3"
+                    "cell4 cell4 cell4";
+            }
+
+            .container div {
+                color: white;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .cell1 {
+                grid-area: cell1;
+                background-color: orange;
+                text-align: center;
+            }
+
+            .cell2 {
+                grid-area: cell2;
+                background-color: cadetblue;
+                text-align: center;
+            }
+
+            .cell3 {
+                grid-area: cell3;
+                background-color: cadetblue;
+                text-align: left;
+            }
+
+            .cell4 {
+                grid-area: cell4;
+                background-color: grey;
+                text-align: center;
+            }
+
+            p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cell0"></div>
+            <div class="cell1">celda 1</div>
+            <div class="cell2">celda 2</div>
+            <div class="cell3">celda 3:
+                <p>contenido que marca el alto de la parte central de la página</p>
+            </div>
+            <div class="cell4">celda 4</div>
+        </div>
+    </body>
+</html>

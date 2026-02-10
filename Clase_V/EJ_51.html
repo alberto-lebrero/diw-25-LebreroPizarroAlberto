@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 51</title>
+
+        <style>
+            .container {
+                display: grid;
+                grid-gap: 1px;
+                grid-template-columns: repeat(2, 150px);
+            }
+
+            .container div {
+                background-color: grey;
+                color: white;
+                align-items: left;
+                padding: 20px;
+                /*También se puede hacer con:
+                    grid-auto-flow:column dense;*/
+            }
+
+            .cell1 {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            .cell2 {
+                grid-row: 2;
+                grid-column: 1;
+            }
+
+            .cell3 {
+                grid-row: 3;
+                grid-column: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cell1">celda 1</div>
+            <div class="cell2">celda 2</div>
+            <div class="cell3">celda 3</div>
+            <div>celda 4</div>
+            <div>celda 5</div>
+            <div>celda 6</div>
+        </div>
+    </body>
+</html>
